@@ -5,7 +5,7 @@ function Five(){
     return(
        <div>
          <div className="section-5">
-            <h1 className="babar">JOIN SHOPPING COMMUNITY TO </h1>
+            <h1 className="babar">JOIN SHOPPING COMMUNITY TOO </h1>
             <h1 style={{marginLeft:"27rem", color:"#ffffff",fontSize:"2.2rem", marginTop:"1rem"}}>GET MONTHLY PROMO</h1>
          <p>Type your email down below and be young wild generation</p>
          <div className="search"> <input type="search" placeholder="   Add your email here"></input>
