@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 4rem;
+    width: 100%;
+    /* background-color: #F6F8F7; */
+    background-color: #EFF3EA;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+nav  a {
+    font-size: 1.5rem;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 0.3rem;
+    display: flex;
+}
+nav a span{
+    /* color: blue; */
+    color: #261FB3;
+    margin-left: 0.3rem;
+}
+nav a:hover{
+    text-decoration: underline blue;
+}
+nav ul {
+    display: flex;
+    gap: 5rem; 
+    list-style: none;
+    /* margin-left: 10rem; */
+    padding-right: 6rem;
+    margin-top: 0.3rem;
+    /* justify-content: space-between; */
+}
+
+nav ul li  {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+nav li :hover{
+    text-decoration: underline blue 0.2rem;
+    color: blue;
+}
+/* nav 2 */
+.nav-2{
+    height: 4rem;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+.nav-2 .nav-2-1{
+    height: 4rem;
+    width: 65%;
+    /* background-color: green; */
+}
+.nav-2 .nav-2-1 ul{
+    margin-top: 1rem;
+    /* margin-left: 2rem; */
+    display: flex;
+}
+.nav-2 .nav-2-1 ul a{
+    color: blue;
+    cursor: pointer;
+}
+.nav-2 .nav-2-1 ul a:hover{
+    text-decoration: underline black 0.2rem;
+}
+.nav-2 .nav-2-2{
+    height: 4rem;
+    width: 40%;
+    /* background-color: blue; */
+    margin-left: 0.3rem;
+    display: flex;
+}
+.nav-2 .nav-2-2 h1{
+    /* margin-left: 7rem; */
+    padding-top: 1.2rem;
+    font-size: 1.5rem;
+}
+.nav-2 .nav-2-2 h2{
+    margin-left: 7rem;
+    display: flex;
+    padding-top: 1.2rem;
+    font-size: 1.5rem;
+
+}
+.nav-2 .nav-2-2 h2 span{
+    margin-left: 0.4rem;
+    text-decoration: underline;
+    color: blue;
+}
+.img{
+    height: 15rem;
+    width: 100%;
+}
+.three{
+    height: 30rem;
+    width: 80%;
+    /* background-color: blue; */
+    margin-top: 1rem;
+    margin-left: 7rem;
+    display: flex;
+    border-radius: 10px;
+}
+.three .summer{
+    height: 30rem;
+    width: 40%;
+    /* background-color: rebeccapurple; */
+    margin-left: 2rem;
+    border-radius: 10px;
+    /* position: sticky; */
+    /* display: grid; */
+
+}
+.summer h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.summer-1{
+    height: 24rem;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 1rem;
+}
+.summer-1 .ref{
+     height: 10rem;
+     width: 50%;
+}
+.summer-1 .ac{
+    height: 10rem;
+    width: 50%;
+}
+.summer-1 .fan{
+    height: 13rem;
+    width: 50%;
+}
+.summer-1 .cooler{
+    height: 13rem;
+    width: 50%;
+}
+
+.three .winter{
+    height: 30rem;
+    width: 40%;
+    /* background-color: rebeccapurple; */
+    margin-left: 9rem;
+    border-radius: 10px;
+
+}
+.winter h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.winter-1{
+    height: 24rem;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 1rem;
+}
+.winter-1 .heater{
+    height: 13rem;
+    width: 50%;
+}
+.winter-1 .led{
+    height: 13rem;
+    width: 50%;
+}
+.winter-1 .machine{
+    height: 13rem;
+    width: 50%;
+}
+.winter-1 .kat{
+    height: 13rem;
+    width: 50%;
+}
+.fans{
+    height: 35rem;
+    width: 90%;
+    /* background-color: red; */
+    margin-top: 2rem;
+    margin-left: 4rem;
+    display: flex;
+   
+}
+h1{
+    text-align: center;
+    /* padding-left: 9rem;/ */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 2.2rem;
+
+}
+.Royal{
+    height: 30rem;
+    width: 30%;
+    /* background-color: yellow; */
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.Royal img{
+    height: 20rem;
+    width: 100%;
+     border-radius: 10px;
+}
+.Royal h1{
+    color: #261FB3;
+}
+.Royal p{
+  color: #074799;
+  margin-left: 7rem;
+  margin-top: 1rem;
+}
+.Royal button{
+    height: 2rem;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    cursor: pointer;
+    color: #261FB3;
+}
+.khurs{
+    height: 30rem;
+    width: 30%;
+    /* background-color: yellow; */
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.khurs img{
+    height: 20rem;
+    width: 100%;
+     border-radius: 10px;
+}
+.khurs h1{
+    color: #261FB3;
+}
+.khurs p{
+    color: #074799;
+    margin-left: 7rem;
+    margin-top: 1rem;
+  }
+  .khurs button{
+    height: 2rem;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    cursor: pointer;
+    color: #261FB3;
+}
+.rado{
+    height: 30rem;
+    width: 30%;
+    /* background-color: yellow; */
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.rado img{
+    height: 20rem;
+    width: 100%;
+     border-radius: 10px;
+}
+.rado p{
+    color: #074799;
+    margin-left: 7rem;
+    margin-top: 1rem;
+  }
+.rado h1{
+    color: #261FB3;
+}
+.rado button{
+    height: 2rem;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    cursor: pointer;
+    color: #261FB3;
+}
+
+.see-more  {
+    height: 2.5rem;
+    width: 10rem;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background-color: #261FB3;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0.2rem;
+    margin-left: 35rem;
+    margin-bottom: 4rem;
+}
+.see-more:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.see-more :hover {
+    background-color: #1a1480;
+}
+.fan-second{
+    height: 30rem;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+.leeds{
+    height: 30rem;
+    width: 27%;
+    /* background-color: green; */
+    margin-left: 5rem;
+    border-radius: 10px;
+}
+.leeds img{
+    height: 20rem;
+    width: 100%;
+     border-radius: 10px;
+}
+.leeds p{
+    color: #074799;
+    margin-left: 7rem;
+    margin-top: 1rem;
+  }
+.leeds h1{
+    color: #261FB3;
+}
+.leeds button{
+    height: 2rem;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    cursor: pointer;
+    color: #261FB3;
+}
+.pak{
+    height: 30rem;
+    width: 27%;
+    /* background-color: green; */
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+.pak img{
+    height: 20rem;
+    width: 100%;
+     border-radius: 10px;
+}
+.pak p{
+    color: #074799;
+    margin-left: 7rem;
+    margin-top: 1rem;
+  }
+.pak h1{
+    color: #261FB3;
+}
+.pak button{
+    height: 2rem;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    cursor: pointer;
+    color: #261FB3;
+}
+.burj{
+    height: 30rem;
+    width: 27%;
+    /* background-color: green; */
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+.burj img{
+    height: 20rem;
+    width: 100%;
+     border-radius: 10px;
+}
+.burj p{
+    color: #074799;
+    margin-left: 7rem;
+    margin-top: 1rem;
+  }
+.burj h1{
+    color: #261FB3;
+}
+.burj button{
+    height: 2rem;
+    width: 30%;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    cursor: pointer;
+    color: #261FB3;
+}
+
+
+.machines{
+    height: 30rem;
+    width: 90%;
+    /* background-color: red; */
+    margin-left: 4rem;
+    margin-top: 1rem;
+    display: flex;
+    /* margin-left: 2rem; */
+}
+.haier{
+    height: 30rem;
+    width: 30%;
+    /* background-color: blue; */
+    /* margin-top: 1rem; */
+    display: grid;
+}
+.haier img{
+    height: 18rem;
+    width: 100%;
+}
+.haier h1{
+    color: blue;
+}
+.haier p{
+    color: red;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+.haier button{
+    height: 2rem;
+    width: 30%;
+    background-color:#ADB2D4 ;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.daw{
+    height: 30rem;
+    width: 30%;
+    /* background-color: blue; */
+    /* margin-top: 1rem; */
+    display: grid;
+    margin-left: 2rem;
+}
+.daw img{
+    height: 18rem;
+    width: 100%;
+}
+.daw h1{
+    color: blue;
+}
+.daw p{
+    color: red;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+.daw button{
+    height: 2rem;
+    width: 30%;
+    background-color:#ADB2D4 ;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.pel{
+    height: 30rem;
+    width: 30%;
+    /* background-color: blue; */
+    /* margin-top: 1rem; */
+    display: grid;
+    margin-left: 2rem;
+}
+.pel img{
+    height: 18rem;
+    width: 100%;
+}
+.pel h1{
+    color: blue;
+    margin-left: 3rem;
+}
+.pel p{
+    color: red;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+.pel button{
+    height: 2rem;
+    width: 30%;
+    background-color:#ADB2D4 ;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.machine-second{
+    height: 35rem;
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+}
+.kenwood{
+    height: 30rem;
+    width: 30%;
+    /* background-color: blue; */
+    margin-top: 2rem;
+    display: grid;
+    margin-left: 2rem;
+}
+.kenwood img{
+    height: 18rem;
+    width: 100%;
+}
+.kenwood h1{
+    color: blue;
+    margin-left: 3rem;
+}
+.kenwood p{
+    color: red;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+.kenwood button{
+    height: 2rem;
+    width: 30%;
+    background-color:#ADB2D4 ;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.jack{
+    height: 30rem;
+    width: 30%;
+    /* background-color: blue; */
+    margin-top: 2rem;
+    display: grid;
+    margin-left: 2rem;
+}
+.jack img{
+    height: 18rem;
+    width: 100%;
+}
+.jack h1{
+    color: blue;
+    margin-left: 3rem;
+}
+.jack p{
+    color: red;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+.jack button{
+    height: 2rem;
+    width: 30%;
+    background-color:#ADB2D4 ;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+@media (max-width: 762px) {
+    .machines, .machine-second {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .haier, .daw, .pel, .kenwood, .jack {
+        width: 90%;
+    }
+
+    button {
+        width: 60%;
+    }
+}
