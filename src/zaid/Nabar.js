@@ -8,7 +8,7 @@ function Navbar() {
             <div>
                 <nav>
                     <h1>
-                        <a href="/">Qureshi <span>Electronic's</span></a>
+                        <a href="/">Qureshi o<span>Electronic's</span></a>
                     </h1>
                     <ul>
                         <li><NavLink to="/home">Home</NavLink></li>
@@ -23,6 +23,7 @@ function Navbar() {
                     <Route path="/service" element={<Service />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
+               
             </div>
         </Router>
        
