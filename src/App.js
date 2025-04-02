@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 
-// Import Components
-import Nabar from "./zaid/Nabar";
-import Navbar2 from "./zaid/Navbar2";
-import Three from "./zaid/Three";
-import Fan from "./zaid/Fan";
-import Machine from "./zaid/Machine";
-// import Login from "./Login"
 function App() {
-    const [cartCount, setCartCount] = useState(0);
+    const handleOpenWindow = () => {
+        window.open("", "_blank", "width=600,height=800");
+    };
 
     return (
         <div className="color-red">
-            <Nabar />
-            <Navbar2 data={cartCount} />
-            <Three />
-            <Fan setData={setCartCount} />
-            <Machine  setData={setCartCount}/>
-          {/* <Login/> */}
+            {/* <Nabar /> */}
+            {/* <Navbar2 data={cartCount} /> */}
+            {/* <Three /> */}
+            {/* <Fan setData={setCartCount} /> */}
+            {/* <Machine setData={setCartCount}/> */}
+            {/* <Login/> */}
+            <button onClick={handleOpenWindow}>Open New Window</button>
         </div>
     );
 }
