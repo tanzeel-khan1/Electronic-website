@@ -5,8 +5,13 @@ import "./App.css";
 function App() {
     const [newWindow, setNewWindow] = useState(null);
 
+
+    const handleOpenWindow = () => {
+        window.open("", "_blank", "width=300,height=400")
+    }
+
     
-    
+
     const handleCloseWindow = () => {
         if (newWindow) {
             newWindow.close(); 
