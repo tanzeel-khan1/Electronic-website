@@ -17,6 +17,9 @@ function App(){
             <Third/>
             <Fouth/>
             <Five/>
+
+
+
  
             {/* <Nabar /> */}
             {/* <Navbar2 data={cartCount} /> */}
