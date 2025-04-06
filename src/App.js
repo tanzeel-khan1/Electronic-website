@@ -1,34 +1,29 @@
 import { useState } from "react";
 import React from "react";
 import "./App.css";
+import Navbar from "./components/Navbar"
+ import Second from "./components/Second"
+import Third from "./components/Third"
+import Fouth from "./components/Fouth"
+import Five from "./components/Five"
 
-function App() {
-    const [newWindow, setNewWindow] = useState(null);
+function App(){
 
-
-    const handleOpenWindow = () => {
-        window.open("", "_blank", "width=300,height=400")
-    }
-
-    
-
-    const handleCloseWindow = () => {
-        if (newWindow) {
-            newWindow.close(); 
-            setNewWindow(null); 
-        }
-    };
 
     return (
         <div className="color-red">
+            <Navbar/>
+            <Second/>
+            <Third/>
+            <Fouth/>
+            <Five/>
+ 
             {/* <Nabar /> */}
             {/* <Navbar2 data={cartCount} /> */}
             {/* <Three /> */}
             {/* <Fan setData={setCartCount} /> */}
             {/* <Machine setData={setCartCount}/> */}
             {/* <Login/> */}
-            <button onClick={handleOpenWindow}>Open New Window</button>
-            <button onClick={handleCloseWindow}>Open New Window</button>
 
         </div>
     );
