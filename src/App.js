@@ -1,10 +1,10 @@
 import { useState } from "react";
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar"
- import Second from "./components/Second"
-import Third from "./components/Third"
-import Fouth from "./components/Fouth"
+// import Navbar from "./components/Navbar"
+//  import Second from "./components/Second"
+// import Third from "./components/Third"
+// import Fouth from "./components/Fouth"
 import Five from "./components/Five"
 
 function App(){
@@ -12,10 +12,10 @@ function App(){
 
     return (
         <div className="color-red">
-            <Navbar/>
+            {/* <Navbar/>
             <Second/>
             <Third/>
-            <Fouth/>
+            <Fouth/> */}
             <Five/>
 
 
