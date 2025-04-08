@@ -6,6 +6,7 @@ import "./App.css";
 // import Third from "./components/Third"
 // import Fouth from "./components/Fouth"
 import Five from "./components/Five"
+import Land from "./watch/land";
 
 function App(){
 
@@ -16,7 +17,8 @@ function App(){
             <Second/>
             <Third/>
             <Fouth/> */}
-            <Five/>
+            {/* <Five/> */}
+            <Land/>
 
 
 
