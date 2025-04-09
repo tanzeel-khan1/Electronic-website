@@ -1,37 +1,18 @@
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from "react";
 import "./App.css";
-// import Navbar from "./components/Navbar"
-//  import Second from "./components/Second"
-// import Third from "./components/Third"
-// import Fouth from "./components/Fouth"
-// import Five from "./components/Five"
-// import Land from "./watch/land";
 import Land from "./watch/Land";
-function App(){
+import Watch2 from './watch/Watch2';
 
-
-    return (
-        <div className="color-red">
-            {/* <Navbar/>
-            <Second/>
-            <Third/>
-            <Fouth/> */}
-            {/* <Five/> */}
-            <Land/>
-
-
-
- 
-            {/* <Nabar /> */}
-            {/* <Navbar2 data={cartCount} /> */}
-            {/* <Three /> */}
-            {/* <Fan setData={setCartCount} /> */}
-            {/* <Machine setData={setCartCount}/> */}
-            {/* <Login/> */}
-
-        </div>
-    );
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Land />} />
+        <Route path="/newpage" element={<Watch2 />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
