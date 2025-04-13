@@ -1,16 +1,23 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Land from "./watch/Land"; // Import Land.js
-import Watch2 from "./watch/Watch2"; // Import Watch2.js
+
+import React, { useState } from 'react';
+import Nabar from "./zaid/Nabar";
+import Navbar2 from "./zaid/Navbar2";
+import Three from "./zaid/Three";
+import Fan from "./zaid/Fan";
+import Machine from './zaid/Machine';
 
 function App() {
+  const [counter, setCounter] = useState(0);
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Land />} />         {/* Home route */}
-        <Route path="/watch2" element={<Watch2 />} /> {/* Watch2 route */}
-      </Routes>
-    </Router>
+    <div>
+      <Nabar />
+      <Navbar2 counter={counter} />
+      <Three />
+      <Fan setCounter={setCounter} />
+      <Machine setCounter={setCounter} />
+
+    </div>
   );
 }
 

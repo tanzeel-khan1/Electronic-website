@@ -3,11 +3,11 @@
 
 import React, { useState } from "react";
 
-function Fan({ setData }) {
+function Fan({ setCounter }) {
   const [showMoreFans, setShowMoreFans] = useState(false); 
 
   function updateData() {
-    setData((prev) => prev + 1);
+    setCounter((prev) => prev + 1);
   }
 
   function handleSeeMore() {

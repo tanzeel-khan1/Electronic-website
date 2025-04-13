@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-function Machine({ setData }) {
+function Machine({ setCounter }) {
   const [showMoreFans, setShowMoreFans] = useState(false);
 
   function updateData() {
-    setData((prev) => prev + 1);
+    setCounter((prev) => prev + 1);
   }
 
   function handleSeeMore() {
