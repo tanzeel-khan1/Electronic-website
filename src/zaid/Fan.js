@@ -16,7 +16,7 @@ function Fan({ setCounter }) {
 
   return (
     <div>
-      <h1>Fan's</h1>
+      <h1 style={{color:"#780C28"}}>Fan's</h1>
 
       <div className="fans">
         <div className="Royal">

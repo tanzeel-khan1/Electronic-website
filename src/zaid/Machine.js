@@ -12,7 +12,7 @@ function Machine({ setCounter }) {
 
   return (
     <div>
-      <h1>Washing Machines</h1>
+      <h1 style={{color:"#780C28"}}>Washing Machines</h1>
       <div className="machines">
         <div className="haier">
           <img
