@@ -96,9 +96,28 @@ nav li :hover{
 
 }
 .nav-2 .nav-2-2 h2 span{
-    margin-left: 0.4rem;
+    margin-left: 1.5rem;
     text-decoration: underline;
     color: blue;
+}
+.counter{
+    margin-left: 8rem;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.pop-up{
+    height: 2.3rem;
+    width: 20rem;
+    background-color: #3D90D7;
+    /* z-index: 3; */
+    /* position: absolute; */
+    margin-left: 15rem;
+    margin-top: 1rem;
+    padding-top: 0.4rem;
+    padding-left: 1rem;
+    border-radius: 5px;
+    color: white;
 }
 .img{
     height: 15rem;

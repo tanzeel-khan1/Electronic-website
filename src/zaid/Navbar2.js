@@ -46,12 +46,11 @@ function Navbar2({ counter }) {
       <nav className="nav-2">
         
         <div className="nav-2-2">
-          <h1 style={{marginLeft:"3rem"}}>Cart(<span>{counter}</span>)</h1>
-          <p style={{marginLeft:"5rem", marginTop:"2rem"}}>{username}</p>
+          <h1 className='counter'>Cart(<span>{counter}</span>)</h1>
+          <div><p className='pop-up'>Your username name is :{username}</p></div>
+       <h2 >Developer: <span>TANZEEL</span></h2>
 
-          <h2>Developer: <span>TANZEEL</span></h2>
         </div>
-        {/* <p className="text-lg text-blue-600 mt-2">{username}</p> */}
 
       </nav>
       <img
