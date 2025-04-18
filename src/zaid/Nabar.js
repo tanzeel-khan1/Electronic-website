@@ -8,7 +8,7 @@ function Navbar() {
             <div>
                 <nav>
                     <h1>
-                        <a href="/">Qureshi o<span>Electronic's</span></a>
+                        <a href="/">Babar's<span>Electronic's</span></a>
                     </h1>
                     <ul>
                         <li><NavLink to="/home">Home</NavLink></li>

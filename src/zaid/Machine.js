@@ -83,6 +83,7 @@ function Machine({ setCounter }) {
           </div>
         </div>
       )}
+      {/* <img src="https://www.surmawala.pk/cdn/shop/files/Summer-HP-Philips-Banner.jpg?v=1743862548&width=1500" style={{width:"100%"}}></img> */}
     </div>
   );
 }

@@ -99,13 +99,15 @@ nav li :hover{
     margin-left: 1.5rem;
     text-decoration: underline;
     color: blue;
+    padding-bottom: 1.4rem;
+
 }
-.counter{
+.counter {
+    
     margin-left: 8rem;
-    font-family: "Gill Sans", sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
+    display: flex;
 }
+
 .pop-up{
     height: 2.3rem;
     width: 20rem;
@@ -438,7 +440,10 @@ h1{
     cursor: pointer;
     color: #261FB3;
 }
-
+.fur-img{
+    height: 40rem;
+    width: 100%;
+}
 
 .machines{
     height: 30rem;
@@ -625,4 +630,64 @@ h1{
     button {
         width: 60%;
     }
+}
+/* ref-container */
+.ref-container{
+    height: 30rem;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 3rem;
+    display: flex;
+}
+.ref-1{
+    height: 30rem;
+    width: 50%;
+    background-color: green;
+}
+.ref-1 img{
+    height: 30rem;
+    width: 100%;
+}
+.ref-2{
+    height: 30rem;
+    width: 50%;
+    /* background-color: teal; */
+}
+.ref-2 p{
+    font-size: 8rem;
+    /* margin-top: 1rem; */
+    /* margin-left: 13rem; */
+    font-weight: 900;
+    text-align: center;
+    font-style: italic;
+    font-family: system-ui;
+}
+
+.ref-2 h1{
+    font-size: 9rem;
+    font-weight: 900;
+    font-style: italic;
+}
+.gef-container{
+    height: 30rem;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 3rem;
+    display: flex;
+}
+.gef-1{
+    height: 30rem;
+    width: 50%;
+    background-color: teal;
+}
+
+.gef-2{
+    height: 30rem;
+    width: 50%;
+    background-color: tan;
+    display: flex;
+}
+.gef-2 img{
+    height: 30rem;
+    width: 100%;
 }
