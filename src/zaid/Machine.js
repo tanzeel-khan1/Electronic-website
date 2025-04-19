@@ -56,8 +56,7 @@ function Machine({ setCounter }) {
           <div className="kenwood">
             <img
               src="https://whitehouse.com.pk/wp-content/uploads/2021/10/899.png"
-              alt="Kenwood Washing Machine"
-            />
+              alt="Kenwood Washing Machine"/>
             <h1>Kenwood Washing Machine</h1>
             <p>Price: 25000</p>
             <button onClick={updateData}>Add to Cart</button>
@@ -65,18 +64,14 @@ function Machine({ setCounter }) {
 
           <div className="jack">
             <img
-            src="https://haqelectronics.com/wp-content/uploads/2024/02/Single-Tub-Washing-Machine-10kg-Black.-JP-79911.jpg"
-              alt="Jackpot Machine"
-            />
+            src="https://haqelectronics.com/wp-content/uploads/2024/02/Single-Tub-Washing-Machine-10kg-Black.-JP-79911.jpg"/>
             <h1>Jackpot Washing Machine</h1>
             <p>Price: 22000</p>
             <button onClick={updateData}>Add to Cart</button>
           </div>
           <div className="jack">
             <img
-            src="https://hadielectronics.com.pk/wp-content/uploads/2024/11/Untitled-design-4.webp"
-              alt="natainal Machine"
-            />
+            src="https://hadielectronics.com.pk/wp-content/uploads/2024/11/Untitled-design-4.webp"/>
             <h1>Natainal Washing Machine</h1>
             <p>Price: 12000</p>
             <button onClick={updateData}>Add to Cart</button>
