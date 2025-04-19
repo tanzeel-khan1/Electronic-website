@@ -118,11 +118,23 @@ nav li :hover{
     margin-left: 3rem;
     margin-top: 1rem;
     border: none;
-    border-radius: 48px gold;
+    border-radius: 10px;
     outline: none;
-    
-    
+    transition: 1s;
 }
+#searchInput:hover{
+    background-color: #60B5FF;
+}
+/* input[type="search"]:focus {
+    color: green;
+  } */
+  input[type="text"]::placeholder {
+    color: #205781;
+  }
+  input[type="text"]::placeholder:hover{
+    color: #fff;
+  }
+
 .counter {
     font-weight: lighter;
     font-family: serif;
