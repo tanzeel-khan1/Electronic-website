@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import data from "./zaid/Data"; 
+// import data from "./zaid/Data"; 
 function Navbar2({ counter }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [username, setUsername] = useState('');
@@ -23,7 +23,7 @@ function Navbar2({ counter }) {
             <input
               id="searchInput"
               type="text"
-              placeholder="Search here..."
+              placeholder="   Search Here..."
               onChange={(event) => setSearchTerm(event.target.value)}/>
           </div>
 
@@ -31,15 +31,7 @@ function Navbar2({ counter }) {
             <p className="pop-up">Your username is: {username}</p>
           </div>
 
-          <h2>
-            Developer:
-            <a
-              href="https://www.instagram.com/tanzeel3691/"
-              target="_blank"
-              rel="noreferrer">
-              Tanzeel
-            </a>
-          </h2>
+          <h2>Developer:<span>Tanzeel</span></h2>
         </div>
       </nav>
 
@@ -47,7 +39,7 @@ function Navbar2({ counter }) {
         className="img"
         src="https://lahorelectronics.com/wp-content/uploads/2020/12/W020190724571436691788.png"/>
 
-      <div className="template_Container">
+      {/* <div className="template_Container">
         {data
           .filter((val) =>
             searchTerm === "" ? true : val.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -63,7 +55,7 @@ function Navbar2({ counter }) {
               </a>
             </div>
           ))}
-      </div>
+      </div> */}
     </div>
   );
 }

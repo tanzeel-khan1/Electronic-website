@@ -11,14 +11,7 @@ function Ref(){
                     <h1>Of f</h1>
                 </div>
             </div>
-            <div className="gef-container">
-                <div className="gef-1">
-                {/* <img src="https://www.surmawala.pk/cdn/shop/files/SS-Collage-Banner-4_420x.jpg?v=1743777689"></img> */}
-
-                </div>
-                <div className="gef-2"></div>
-
-            </div>
+            
             </div>
     )
 }
