@@ -1,38 +1,42 @@
-import React, { useState } from "react";
 import { data } from "../zaid/Data";
 
+import React from "react";
+// import { data } from "../zaid/Data";
+
 function Fan({ setCounter }) {
-  const [showMoreFans, setShowMoreFans] = useState(false);
+  const groupedData = [];
+  for (let i = 0; i < data.length; i += 4) {
+    groupedData.push(data.slice(i, i + 4));
+  }
 
   function updateData() {
     setCounter((prev) => prev + 1);
   }
-
-  function handleSeeMore() {
-    setShowMoreFans(true);
-  }
+  const Alert = () => {
+    alert('This item is Add in Your Cart !');
+  };
 
   return (
     <div>
-      <h1 style={{ color: "#780C28" }}>Fan's</h1>
+      {/* <h1 style={{ color: "#780C28" }}>Fan's</h1> */}
 
-      {data?.map((item, index) => (
-        <div className="" style={{
-          display:"flex",
-          flexDirection:"column",
-          width:"200px",
-          height:"200px",
-          marginTop:"2rem"
-        }}>
-          <div>{item.title}</div>
-          <img src={item.imgSrc} alt=""/>
+      {groupedData.map((group, rowIndex) => (
+        <div className="main" key={rowIndex}>
+          {group.map((item) => (
+            <div className="container" key={item.id}>
+              {/* <p>ID: {item.id}</p> */}
+              {/* <div>{item.title}</div> */}
+              <img
+                src={item.imgSrc}/>
+                <h1>{item.title}</h1>
+              <h2> Rs: {item.price}</h2>
+              <button onClick={updateData} onClickCapture={Alert}>Add to Cart</button>
+            </div>
+          ))}
         </div>
       ))}
-      {/* <img src="https://www.surmawala.pk/cdn/shop/files/SS-Collage-Banner-1_785x.jpg?v=1743777686" className="fur-img"></img> */}
-      <img
-        src="https://www.surmawala.pk/cdn/shop/files/Summer-HP-Philips-Banner.jpg?v=1743862548&width=1500"
-        style={{ width: "100%" }}
-      ></img>
+
+      
     </div>
   );
 }

@@ -18,14 +18,14 @@ function Navbar2({ counter }) {
       <nav className="nav-2">
         <div className="nav-2-2">
           <h1 className="counter">
-            Cart(<span>{counter}</span>)
+            Cart 🛒(<span>{counter}</span>)
           </h1>
 
           <div className="searchInput_Container">
             <input
               id="searchInput"
               type="text"
-              placeholder="   Search Here..."
+              placeholder="  🔍︎ Search Here..."
               onChange={(event) => setSearchTerm(event.target.value)}
             />
           </div>
@@ -45,19 +45,20 @@ function Navbar2({ counter }) {
         src="https://lahorelectronics.com/wp-content/uploads/2020/12/W020190724571436691788.png"
       />
 
-      <div className="template_Container">
+      <div className="">
         {data
-          ?.filter((val) =>
+          ?.filter((item) =>
             searchTerm === ""
               ? false
-              : val.title.toLowerCase().includes(searchTerm.toLowerCase())
+              : item.title.toLowerCase().includes(searchTerm.toLowerCase())
           )
-          .map((val) => (
-            <div className="template" key={val.id }>
-              <img src={val.imgSrc} alt={val.title} />
-              <h3>{val.title}</h3>
-              {/* <p className="description">{val.description}</p> */}
-              <p className="price">${val.price}</p>
+          .map((item) => (
+            <div className="container" key={item.id }>   
+                              {/* <p>{item.category}</p> */}
+
+              <img src={item.imgSrc} alt={item.title} />
+              <h3>{item.title}</h3>
+              <p className="price">Rs: {item.price}</p>
               
             </div>
           ))}
