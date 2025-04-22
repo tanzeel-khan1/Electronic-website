@@ -25,7 +25,7 @@ function Navbar2({ counter }) {
             <input
               id="searchInput"
               type="text"
-              placeholder="  🔍︎ Search Here..."
+              placeholder="  🔍︎ │ Search Here..."
               onChange={(event) => setSearchTerm(event.target.value)}
             />
           </div>
