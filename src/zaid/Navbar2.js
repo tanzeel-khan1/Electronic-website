@@ -13,6 +13,9 @@ function Navbar2({ counter }) {
     }
   }, []);
 
+
+  
+
   return (
     <div>
       <nav className="nav-2">
@@ -25,6 +28,7 @@ function Navbar2({ counter }) {
             <input
               id="searchInput"
               type="text"
+              alt="banner"
               placeholder="  🔍︎ │ Search Here..."
               onChange={(event) => setSearchTerm(event.target.value)}
             />
@@ -45,7 +49,7 @@ function Navbar2({ counter }) {
         src="https://lahorelectronics.com/wp-content/uploads/2020/12/W020190724571436691788.png"
       />
 
-      <div className="">
+      <div className="main">
         {data
           ?.filter((item) =>
             searchTerm === ""
@@ -59,6 +63,8 @@ function Navbar2({ counter }) {
               <img src={item.imgSrc} alt={item.title} />
               <h3>{item.title}</h3>
               <p className="price">Rs: {item.price}</p>
+              {/* <button onClick={updateData} onClickCapture={Alert}>Add to Cart</button> */}
+
               
             </div>
           ))}
