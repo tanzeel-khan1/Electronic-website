@@ -1,30 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* background-color: red; */
 }
-.naw{
+
+.naw {
     height: 5rem;
     width: 100%;
     display: flex;
     /* background-color:black; */
 }
 
-
-
-.naw ul{
+.naw ul {
     margin-top: 1rem;
     margin-left: 33rem;
     display: flex;
     gap: 5rem;
     text-decoration: none;
 }
-.naw li{
-    font-size:  2rem;
+
+.naw li {
+    font-size: 2rem;
     font-weight: inherit;
-   font-style: none;
-   font-family: Georgia, serif;
+    font-style: none;
+    font-family: Georgia, serif;
     text-decoration: none;
     list-style: none;
     cursor: pointer;
@@ -61,19 +61,17 @@
 }
 
 /* Idea */
-.idea{
+.idea {
     height: 36.1rem;
     width: 100%;
     /* background-color: red; */
     display: flex;
 }
-.idea-1{
+.idea-1 {
     height: 36.1rem;
     width: 100%;
-    /* background-color: #000;    */
-    /* display: grid; */
 }
-.idea-1 h1{
+.idea-1 h1 {
     font-size: 4.4rem;
     font-weight: 900;
     margin-left: 4rem;
@@ -81,22 +79,22 @@
     font-family: serif;
     /* color: white; */
 }
-.idea-1 p{
+.idea-1 p {
     font-size: 2.4rem;
     margin-top: 2rem;
     margin-left: 4rem;
     font-variant: inherit;
-    color: #4D55CC;
+    color: blue;
 }
-.btn-sec{
+.btn-sec {
     height: 13rem;
     width: 100%;
     /* background-color: red; */
     display: flex;
 }
-.idea-1 .GIT{
+.idea-1 .GIT {
     height: 5rem;
-    width: 10%;
+    width: 14%;
     background-color: gray;
     border: none;
     outline: none;
@@ -104,53 +102,174 @@
     display: grid;
     text-align: center;
     cursor: pointer;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.3rem;
     margin-left: 5rem;
     margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
 }
-.idea-1 .GIT img{
+.idea-1 .GIT img {
     height: 3rem;
     width: 50%;
-    /* align-items: center; */
-    /* justify-items: center; */
-    margin-left: 1rem;
+    margin-left: 1.3rem;
 }
-.idea-1 .ins{
+.idea-1 .insta {
     height: 5rem;
-    width: 10%;
+    width: 14%;
     background-color: gray;
     border: none;
     outline: none;
     border-radius: 5px;
-    /* display: grid; */
     text-align: center;
     cursor: pointer;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.3rem;
     margin-left: 5rem;
     margin-top: 2rem;
+    display: grid;
+    align-items: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+    justify-content: center;
 }
-.idea-1 .ins img{
+.idea-1 .insta img {
     height: 3rem;
     width: 50%;
-    /* align-items: center; */
-    /* justify-items: center; */
-    margin-left: 1rem;
+    margin-left: 1.3rem;
 }
-.idea-2{
+.idea-1 .linkdin {
+    height: 5rem;
+    width: 14%;
+    background-color: gray;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+.idea-1 .linkdin img {
+    height: 3rem;
+    width: 50%;
+    margin-left: 1.2rem;
+}
+.idea-1 .GIT:hover,
+.idea-1 .insta:hover,
+.idea-1 .linkdin:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    text-decoration: underline;
+}
+
+
+.idea-2 {
     height: 36.1rem;
     width: 100%;
-    /* background-color: black;    */
 }
-.idea-2 img{
+.idea-2 img {
     height: 22rem;
     width: 50%;
     border-radius: 100%;
     margin-left: 9rem;
     margin-top: 4rem;
-    /* border: 1rem solid blue; */
-    box-shadow: 10px 15px 15px #A59D84;
+    /* box-shadow: 10px 15px 15px #A59D84; */
+    /* clip-path: xywh(0 5px 100% 75% round 15% 0); */
+}
+.idea-2 img:hover {
+    transform: translateY(-10px) scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .naw {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .naw ul {
+        margin-top: 1rem;
+        margin-left: 0;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .naw li {
+        font-size: 1.6rem;
+    }
+    .naw h1 a {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+    .idea {
+        flex-direction: column;
+        align-items: center;
+    }
+    .idea-1 {
+        text-align: center;
+    }
+    .idea-1 h1 {
+        font-size: 3rem;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .idea-1 p {
+        font-size: 2rem;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .btn-sec {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .idea-1 .GIT,
+    .idea-1 .insta,
+    .idea-1 .linkdin {
+        width: 60%;
+        margin-left: 0;
+    }
+    .idea-2 img {
+        height: 18rem;
+        width: 18rem;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .naw li {
+        font-size: 1.4rem;
+    }
+    .naw h1 a {
+        font-size: 2.5rem;
+    }
+    .idea-1 h1 {
+        font-size: 2.5rem;
+    }
+    .idea-1 p {
+        font-size: 1.6rem;
+    }
+    .idea-1 .GIT,
+    .idea-1 .insta,
+    .idea-1 .linkdin {
+        width: 80%;
+    }
+
+    .idea-2 img {
+        height: 15rem;
+        width: 15rem;
+        margin-top: 10rem;
+        margin-left: 3rem;
+    }
 }

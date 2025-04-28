@@ -9,14 +9,17 @@ function Idea(){
                    <div className="btn-sec">
                    <a href="https://github.com/tanzeel-khan1" className="GIT">
                    <img src="GIT LOGO.PNG"></img>
-                 git
+                 Github
                    </a>
 
-                   <a href="https://github.com/tanzeel-khan1" className="GIT">
-                   {/* <img src="GIT LOGO.PNG"></img */}
-                   🅾
+                   <a href="https://www.instagram.com/tanzeel3691/" className="insta">
+                   <img src="insta lo.PNG"></img>
+                 Instagram
+                   </a>
 
-                 git
+                   <a href="https://www.linkedin.com/in/tanzeel-khan-60601b301/" className="linkdin">
+                   <img src="linkdin lo.PNG"></img>
+                 Linkdin
                    </a>
                    </div>
                 </div>
