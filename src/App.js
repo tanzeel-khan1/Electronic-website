@@ -2,6 +2,7 @@
 // import React, { useState  } from 'react';
 import First from './portfolio/First';
 import Idea from './portfolio/Idea';
+import Second from './portfolio/Second';
 // import Nabar from "./zaid/Nabar";
 // import Navbar2 from "./zaid/Navbar2";
 
@@ -21,6 +22,7 @@ function App() {
       {/* <Notepad/> */}
       <First/>
       <Idea/>
+      <Second/>
 
      
 
