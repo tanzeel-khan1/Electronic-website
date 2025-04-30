@@ -5,7 +5,6 @@ import Idea from './portfolio/Idea';
 import Second from './portfolio/Second';
 // import Nabar from "./zaid/Nabar";
 // import Navbar2 from "./zaid/Navbar2";
-
 // import Fan from "./zaid/Fan";
 // import Notepad from './Notepad';
 function App() {

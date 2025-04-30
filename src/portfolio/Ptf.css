@@ -95,21 +95,24 @@
 .idea-1 .GIT {
     height: 5rem;
     width: 14%;
-    background-color: gray;
+    background-color: #3C3D37;
     border: none;
     outline: none;
     border-radius: 5px;
     display: grid;
     text-align: center;
     cursor: pointer;
-    color: black;
+    color: white;
+    /* color: 3C3D37; */
     text-decoration: none;
     font-size: 1.3rem;
     margin-left: 5rem;
     margin-top: 2rem;
     align-items: center;
     justify-content: center;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+    /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); */
+    box-shadow: 12px 12px 2px 1px #22177A;
+
 }
 .idea-1 .GIT img {
     height: 3rem;
@@ -119,20 +122,22 @@
 .idea-1 .insta {
     height: 5rem;
     width: 14%;
-    background-color: gray;
+    background-color: #3C3D37;
     border: none;
     outline: none;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1.3rem;
     margin-left: 5rem;
     margin-top: 2rem;
     display: grid;
     align-items: center;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+    /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); */
+    box-shadow: 12px 12px 2px 1px #22177A;
+
     justify-content: center;
 }
 .idea-1 .insta img {
@@ -143,13 +148,13 @@
 .idea-1 .linkdin {
     height: 5rem;
     width: 14%;
-    background-color: gray;
+    background-color: #3C3D37;
     border: none;
     outline: none;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1.3rem;
     margin-left: 5rem;
@@ -157,7 +162,10 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+    /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); */
+    box-shadow: 12px 12px 2px 1px #22177A;
+    ;
+
 }
 .idea-1 .linkdin img {
     height: 3rem;
@@ -191,9 +199,9 @@
     transition: transform 0.3s ease-in-out;
 }
 .Third-sec{
-    height: 40rem;
+    height: 93rem;
     width: 100%;
-    /* background-color: red; */
+    /* background-color: green; */
 }
 
 .Third-sec h1 {
@@ -237,7 +245,111 @@
     width: 17%;
     margin-left: 4rem;
 }
+.Third-2{
+    height: 30rem;
+    width: 90%;
+    /* background-color: black; */
+    margin-top: 4rem;
+    border-radius: 10px;
+    display: flex;
+}
+.Third-2 .sec-1{
+    height: 30rem;
+    width: 54%;
+    /* background-color: green; */
+    border: 1rem black;
+}
+ .sec-1 h2{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #393E46;
+    margin-top: 10rem;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+}
+.sec-1 p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 2rem;
 
+    color: #393E46;
+
+}
+.Third-2 .sec-2{
+    height: 30rem;
+    width: 50%;
+    /* background-color: yellowgreen; */
+    /* display: block; */
+}
+.Third-2 .sec-2 img{
+    height: 30rem;
+    width: 100%;
+    /* display: block; */
+    border-radius: 10px;
+}
+.Third-3{
+    height: 27rem;
+    width: 90%;
+    /* background-color: red; */
+    margin-top: 3rem;
+    border-radius: 10px;
+    display: flex;
+
+}
+.Third-3 .sec-4{
+    height: 27rem;
+    width: 31rem;
+    /* background-color: yellowgreen; */
+}
+.Third-3 .sec-4 img{
+    height: 27rem;
+    width: 30.5rem;
+    border-radius: 10px;
+}
+.Third-3 .sec-5{
+    height: 27rem;
+    width: 31rem;
+    /* background-color: orange; */
+}
+.Third-3 .sec-5 h3{
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Gill Sans", sans-serif;
+    margin-top: 8rem;
+    color: #393E46;
+    /* color: blue; */
+    text-align: center;
+}
+.Third-3 .sec-5 p{
+    font-size: 2rem;
+    font-family: serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 1rem;
+    color: #393E46;
+}
+/* footer */
+footer{
+    height: 18rem;
+    width: 100%;
+    background-color:#222831;
+}
+footer h1{
+    font-size: 4rem;
+    font-weight: 900;
+    padding-top: 3rem;
+    text-align: center;
+    color: blue;
+    font-family: "Gill Sans", sans-serif;
+}
+footer h5{
+    font-size: 2rem;
+    font-family: serif;
+     color: white;
+    font-weight: lighter;
+    text-align: center;
+
+}
 
 @media (max-width: 768px) {
     .naw {
