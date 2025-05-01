@@ -1,11 +1,15 @@
 
 // import React, { useState  } from 'react';
-import First from './portfolio/First';
-import Idea from './portfolio/Idea';
-import Second from './portfolio/Second';
+// import First from './portfolio/First';
+// import Idea from './portfolio/Idea';
+// import Second from './portfolio/Second';
 // import Nabar from "./zaid/Nabar";
 // import Navbar2 from "./zaid/Navbar2";
 // import Fan from "./zaid/Fan";
+
+import Calculater from "./Calculater";
+// import Quiz from "./Quiz";
+
 // import Notepad from './Notepad';
 function App() {
   // const [counter, setCounter] = useState(0);
@@ -19,9 +23,11 @@ function App() {
       {/* <Navbar2 counter={counter}  /> */}
       {/* <Fan setCounter={setCounter} /> */}
       {/* <Notepad/> */}
-      <First/>
-      <Idea/>
-      <Second/>
+      {/* <First/> */}
+      {/* <Idea/> */}
+      {/* <Second/> */}
+      {/* <Quiz/> */}
+      <Calculater/>
 
      
 
