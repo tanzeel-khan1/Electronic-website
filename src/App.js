@@ -7,9 +7,12 @@
 // import Navbar2 from "./zaid/Navbar2";
 // import Fan from "./zaid/Fan";
 
-import Calculater from "./Calculater";
+// import Calculater from "./Calculater";
 // import Quiz from "./Quiz";
 
+// import Abd from './Abd';
+import Chat from './Chat';
+// import User from './User'
 // import Notepad from './Notepad';
 function App() {
   // const [counter, setCounter] = useState(0);
@@ -27,7 +30,10 @@ function App() {
       {/* <Idea/> */}
       {/* <Second/> */}
       {/* <Quiz/> */}
-      <Calculater/>
+      {/* <Calculater/> */}
+      {/* <Abd/> */}
+      {/* <User/> */}
+      <Chat/>
 
      
 

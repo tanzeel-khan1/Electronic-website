@@ -2,8 +2,7 @@ import { useState } from "react";
 import React from "react";
 import "./index.css";
 
-
-export default function AuthPage() {
+ function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
@@ -75,3 +74,4 @@ export default function AuthPage() {
     </div>
   );
 }
+export default AuthPage;
