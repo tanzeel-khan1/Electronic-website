@@ -11,7 +11,7 @@
 // import Quiz from "./Quiz";
 
 // import Abd from './Abd';
-import Chat from './Chat';
+import Chat from './Slide';
 // import User from './User'
 // import Notepad from './Notepad';
 function App() {
