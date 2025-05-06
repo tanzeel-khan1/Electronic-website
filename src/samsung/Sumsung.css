@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 7rem;
+    width: 100%;
+    background-color: red;
+}
+nav a{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    /* padding-top: 4px; */
+    /* margin-top: 3rem; */
+    color: black;
+    
+}

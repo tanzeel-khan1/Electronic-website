@@ -26,9 +26,11 @@ const Slide = () => {
   <h1>uytfy</h1>
 <button>yryry</button>
       </section>
-      {/* {isOpen && <div className="overlay" onClick={() => setIsOpen(false)}></div>} */}
     </>
   );
 };
 
 export default Slide;
+
+
+

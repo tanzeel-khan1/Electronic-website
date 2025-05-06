@@ -11,14 +11,14 @@ function First() {
           </h1>
           <ul>
             <li><NavLink to="/About" exact>About</NavLink></li>
-            <li><NavLink to="/skills">Skills</NavLink></li>
+            <li><NavLink to="/Company">Company</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
         </nav>
-
+tyytd
         <Routes>
           <Route path="/About" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/Company" element={<Company />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
@@ -34,7 +34,7 @@ function About() {
   );
 }
 
-function Skills() {
+function Company() {
   return (
     <div>
       <h1>HTML</h1>

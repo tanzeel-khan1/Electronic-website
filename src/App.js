@@ -7,11 +7,14 @@
 // import Navbar2 from "./zaid/Navbar2";
 // import Fan from "./zaid/Fan";
 
+// import { Nav } from "react-bootstrap";
+import Nav from "./samsung/Nav";
+
 // import Calculater from "./Calculater";
 // import Quiz from "./Quiz";
 
 // import Abd from './Abd';
-import Chat from './Slide';
+// import Chat from './Slide';
 // import User from './User'
 // import Notepad from './Notepad';
 function App() {
@@ -33,7 +36,8 @@ function App() {
       {/* <Calculater/> */}
       {/* <Abd/> */}
       {/* <User/> */}
-      <Chat/>
+      {/* <Chat/> */}
+      <Nav/>
 
      
 
