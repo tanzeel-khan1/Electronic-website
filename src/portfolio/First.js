@@ -14,8 +14,9 @@ function First() {
             <li><NavLink to="/Company">Company</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
+          <h2>gfyfu</h2>
         </nav>
-tyytd
+          
         <Routes>
           <Route path="/About" element={<About />} />
           <Route path="/Company" element={<Company />} />

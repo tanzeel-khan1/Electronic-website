@@ -8,6 +8,7 @@
 // import Fan from "./zaid/Fan";
 
 // import { Nav } from "react-bootstrap";
+import ImgSec from "./samsung/ImgSec";
 import Nav from "./samsung/Nav";
 
 // import Calculater from "./Calculater";
@@ -38,6 +39,7 @@ function App() {
       {/* <User/> */}
       {/* <Chat/> */}
       <Nav/>
+      <ImgSec/>
 
      
 

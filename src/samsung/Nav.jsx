@@ -7,20 +7,33 @@ function Nav(){
         <>
         <nav>
             <h1>
-                <a href="/">Sumsung</a> 
+                <a href="/" className="me">SAMSUNG
+                </a>
             </h1>
+            <h4>Support</h4>
+            <h5>Business</h5>
+
             <ul>
             <li><NavLink to="/About" exact>About</NavLink></li>
-            <li><NavLink to="/skills">Skills</NavLink></li>
+            <li><NavLink to="/Company">Company</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink to="/Start" >Start</NavLink></li>
+            <li><NavLink to="/Mobile">Mobile's</NavLink></li>
+            <li><NavLink to="/Laptop">Laptop's</NavLink></li>
           </ul>
-
+          <input
+          type="text"
+          placeholder="  🔍︎ │ Search ..."
+          />
         </nav>
 
         <Routes>
           <Route path="/About" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/Company" element={<Company />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/Start" element={<Start />} />
+          <Route path="/Mobile" element={<Mobile />} />
+          <Route path="/laptop" element={<Laptop />} />
         </Routes>
         </>
         </Router>
@@ -31,28 +44,50 @@ function Nav(){
 function About() {
     return (
       <div>
-        <h1>About Me</h1>
+        <h1>We are <span style={{color:"blue"}}>best</span> in the world</h1>
       </div>
     );
   }
   
-  function Skills() {
+  function Company() {
     return (
-      <div>
-        <h1>HTML</h1>
-        <h1>CSS</h1>
-        <h1>JAVASCRIPT</h1>
-        <h1>REACT</h1>
-      </div>
+     <>
+     <h1 style={{color:"blue", textAlign:"center"}}>SUMSUNG</h1>
+     </>
     );
   }
   
   function Contact() {
     return (
       <div>
-          <p>This My Email Accont Contact on ￬</p>
-        <h1>Tanzeel0680@gmail.com</h1>
+          <span>Contact on This Email ￬</span>
+        <h3 style={{color:"blue"}}>Tanzeel0680@gmail.com</h3>
       </div>
+    );
+  }
+
+  function Start() {
+    return (
+      <div>
+        <h1>We start is good</h1>
+      </div>
+    );
+  }
+  
+  function Mobile() {
+    return (
+      <>
+         <h1>We <span style={{color:"blue"}}>Mobile's</span> is best in the world</h1>
+      </>
+    );
+  }
+  
+  function Laptop() {
+    return (
+      <>
+         
+        <h1>We <span style={{color:"blue"}}>Laptop's</span> is best in the world</h1>
+      </>
     );
   }
 
