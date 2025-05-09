@@ -8,8 +8,10 @@
 // import Fan from "./zaid/Fan";
 
 // import { Nav } from "react-bootstrap";
-import ImgSec from "./samsung/ImgSec";
-import Nav from "./samsung/Nav";
+import Sign from "./Login/Sign";
+// import ImgSec from "./samsung/ImgSec";
+// import Nav from "./samsung/Nav";
+// import Third from "./samsung/Third";
 
 // import Calculater from "./Calculater";
 // import Quiz from "./Quiz";
@@ -38,9 +40,10 @@ function App() {
       {/* <Abd/> */}
       {/* <User/> */}
       {/* <Chat/> */}
-      <Nav/>
-      <ImgSec/>
-
+      {/* <Nav/> */}
+      {/* <ImgSec/> */}
+      {/* <Third/> */}
+     <Sign/>
      
 
     </div>

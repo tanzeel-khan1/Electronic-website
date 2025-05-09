@@ -6,8 +6,8 @@ function ImgSec() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % 3); // 3 slides
-    }, 3000); // 3 seconds
+      setCurrentSlide((prev) => (prev + 1) % 3); 
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -42,7 +42,10 @@ function ImgSec() {
           <button>Shop Now</button>
           <img src="https://images.samsung.com/is/image/samsung/assets/pk/home/250423/SEPAK-A_Series_Scom_en_1440x640.png?imwidth=1366"          />
         </section>
+
       )}
+       <h1 className="latest-off">Latest Offers</h1>
+
     </>
   );
 }
