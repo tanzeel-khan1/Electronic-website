@@ -44,11 +44,6 @@ function Third(){
                 <button>Buy Now</button>
                 </div>
 
-                  
-
-
-
-               
 
 
                 
