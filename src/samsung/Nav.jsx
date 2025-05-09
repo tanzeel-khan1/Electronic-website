@@ -1,3 +1,7 @@
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+
+
 import { NavLink, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./Sumsung.css";
 
@@ -23,8 +27,9 @@ function Nav(){
           </ul>
           <input
           type="text"
-          placeholder="  🔍︎ │ Search ..."
-          />
+          placeholder="  🔍︎ │ Search ..."/>
+          {/* <FontAwesomeIcon className='bab' icon={faCartShopping} /> */}
+
         </nav>
 
         <Routes>
@@ -93,3 +98,4 @@ function About() {
 
 
 export default Nav;
+

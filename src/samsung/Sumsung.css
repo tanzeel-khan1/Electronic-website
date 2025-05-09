@@ -122,14 +122,14 @@ nav h5:hover{
     border-radius: 5px;
 } */
 .img-1 {
-    height: 35rem;
+    height: 33rem;
     width: 100%;
     background-color: black;
     position: relative;
   }
   
   .img-1 img {
-    height: 35rem;
+    height: 33rem;
     width: 100%;
     /* display: block; */
   }
@@ -198,3 +198,98 @@ nav h5:hover{
     color: black;
     background-color: white;
 }
+.tum{
+    position: absolute;
+    top: 20rem;
+    /* left: 70%; */
+    margin-left: 80rem;
+    /* transform: translate(-50%, -50%); */
+    padding: 10px 20px;
+    background-color: rgb(150, 150, 150); 
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline;
+    transition: 0.3s;
+  }
+.next{
+    height: 35rem;
+    width: 100%;
+    /* display: flex; */
+    position: relative;
+}
+.next img{
+    height: 35rem;
+    width: 100%;
+    /* position: absolute; */
+}
+.next h1{
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 10rem;
+    left: 5rem;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    /* padding: 10px 20px; */
+    background-color: transparent;
+    color: black;
+    border: none;
+
+}
+.next h2{
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 14rem;
+    left: 5rem;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    /* padding: 10px 20px; */
+    background-color: transparent;
+    color: black;
+    border: none;
+
+}
+.next p{
+    /* font-size: 3rem; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    top: 19rem;
+    left: 5rem;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    /* padding: 10px 20px; */
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+.next button{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+.next button:hover{
+    color: black;
+    background-color: white;
+}
+
+.fade {
+    animation: fadein 1s ease-in-out;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
