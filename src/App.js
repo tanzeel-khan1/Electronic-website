@@ -8,7 +8,8 @@
 // import Fan from "./zaid/Fan";
 
 // import { Nav } from "react-bootstrap";
-import Sign from "./Login/Sign";
+// import Next from "./Login/Next";
+import Nxt from "./Login/Nxt";
 // import ImgSec from "./samsung/ImgSec";
 // import Nav from "./samsung/Nav";
 // import Third from "./samsung/Third";
@@ -43,8 +44,9 @@ function App() {
       {/* <Nav/> */}
       {/* <ImgSec/> */}
       {/* <Third/> */}
-     <Sign/>
-     
+     {/* <Sign/> */}
+    {/* <Next/> */}
+    <Nxt/> 
 
     </div>
   );

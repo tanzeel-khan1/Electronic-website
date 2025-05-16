@@ -300,3 +300,106 @@ nav h5:hover{
     text-align: center;
     margin-top: 2rem
 }
+
+
+/* ================= Mobile Responsive Styles ================= */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  nav h1 {
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  nav input {
+    width: 90%;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  nav .bab,
+  nav .beb {
+    position: static;
+    margin: 0.5rem auto;
+  }
+
+  h4, h5 {
+    position: static;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .img-sec {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .img-1 {
+    height: auto;
+    width: 100%;
+  }
+
+  .img-1 img {
+    height: auto;
+    width: 100%;
+  }
+
+  .img-1 h1,
+  .img-1 h2,
+  .img-1 p,
+  .img-1 .imh,
+  .img-1 button {
+    position: static;
+    transform: none;
+    margin: 1rem auto;
+    text-align: center;
+    display: block;
+  }
+
+  .tum {
+    margin: 1rem auto;
+    display: block;
+    position: static;
+  }
+
+  .next {
+    height: auto;
+  }
+
+  .next img {
+    width: 100%;
+    height: auto;
+  }
+
+  .next h1,
+  .next h2,
+  .next p,
+  .next button {
+    position: static;
+    transform: none;
+    margin: 1rem auto;
+    text-align: center;
+    display: block;
+  }
+
+  .latest-off {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+}
