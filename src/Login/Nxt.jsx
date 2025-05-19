@@ -1,99 +1,110 @@
 import { useState } from "react";
+import './Login.css'
+function Nxt(){
+    const [isLogin, setIsLogin] = useState(true);
+    const [name, setname] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [loggedInUser, setLoggedInUser] = useState(null);
 
-function Nxt() {
-  const [isLogin, setIsLogin] = useState(true);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [loggedInUser, setLoggedInUser] = useState(null);
+    const getUsers = () => {
+        return JSON.parse(localStorage.getItem("users")) || []  
+      };
 
-  const getUsers = () => {
-    return JSON.parse(localStorage.getItem("users")) || [];
-  };
-
-  const handleSubmit = (e) => {
+const handleSubmit = (e) => {
     e.preventDefault();
+
     let users = getUsers();
 
     if (isLogin) {
-      const foundUser = users.find(
-        (user) => user.email === email && user.password === password
-      );
-      if (foundUser) {
-        setLoggedInUser(foundUser.name);
-        alert(`Welcome, ${foundUser.name}`);
-      } else {
-        alert("Invalid email or password");
-      }
+        const foundUser = users.find(
+            (user) => user.email === email && user.password === password
+        );
+        if (foundUser) {
+            setLoggedInUser(foundUser.name);
+            alert(`Welcome ${foundUser.name}`);
+            setEmail("");
+            setPassword("");
+        } else {
+            alert("Invalid credentials");
+        }
     } else {
-      const emailExists = users.some((user) => user.email === email);
-      if (emailExists) {
-        alert("Email already exists. Please login.");
-      } else {
-        const newUser = { name, email, password };
-        const updatedUsers = [...users, newUser];
-        localStorage.setItem("users", JSON.stringify(updatedUsers));
-        alert("Signup successful");
-        setIsLogin(true);
-      }
+        const emailExists = users.some((user) => user.email === email);
+        if (emailExists) {
+            alert("Email already exists!");
+        } else {
+            const newUser = { name, email, password };
+            const updatedUsers = [...users, newUser];
+            localStorage.setItem("users", JSON.stringify(updatedUsers));
+            alert("Signup Successful");
+            setIsLogin(true);
+            setname("");
+            setEmail("");
+            setPassword("");
+        }
     }
+};
 
-    setName("");
-    setEmail("");
-    setPassword("");
-  };
-
-  return (
-    <div>
-      <h2>{isLogin ? "Login" : "Signup"}</h2>
-
+    return(
+        <>
+        <div id="main">
+      <h2>{isLogin ? "Login" : "Sigup"}</h2>
       {loggedInUser ? (
-        <h3>Hello, {loggedInUser}!</h3>
+        <h3>Hello, {loggedInUser}</h3>
       ) : (
         <form onSubmit={handleSubmit}>
-          {!isLogin && (
-            <div>
-              <label>Name:</label>
-              <input
-                type="text"
-                required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-          )}
-          <div>
+        {!isLogin && (
+          <div className="name">
+            <label>Name:</label>
+            <input
+
+            type="text"
+            required
+            value={name}
+            placeholder="  Name"
+            onChange={(e) => setname(e.target.value)}
+            />
+          </div>
+        )}
+        <div className="email">
             <label>Email:</label>
             <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+            type="text"
+            required
+            value={email}
+            placeholder="  Email"
+            onChange={(e) => setEmail(e.target.value)}
             />
-          </div>
-          <div>
+        </div>
+        <div className="password">
             <label>Password:</label>
-            <input
-              type="password"
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+            <input 
+            type="text"
+            required
+            value={password}
+            placeholder="  Password"
+            onChange={(e) => setPassword(e.target.value)}
             />
-          </div>
-          <button type="submit">{isLogin ? "Login" : "Signup"}</button>
+        </div>
+        <button className="submit" type="submit">{isLogin ? "Login" : "Signup"}</button>
         </form>
       )}
+    {!loggedInUser && (
+        <p >
+            {isLogin ?  "Mere pass Account nhi hai?" : "Mere pass Account hai?"}{""}
+            <button className="set" onClick={() => setIsLogin(!isLogin)}>
+                {isLogin ? "Signup" : "Login"} 
 
-      {!loggedInUser && (
-        <p>
-          {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
-          <button onClick={() => setIsLogin(!isLogin)}>
-            {isLogin ? "Signup" : "Login"}
-          </button>
+            </button>
         </p>
-      )}
-    </div>
-  );
-}
+    )
 
+    }
+
+
+
+        </div>
+        </>
+    )
+}
 export default Nxt;

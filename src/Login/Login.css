@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: red; */
+}
+
+ 
+#main {
+    height: 30rem;
+    width: 18rem;
+    margin-top: 6rem;
+    margin-left: 32rem;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+
+
+#main h2 {
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    color: #4D55CC;
+    text-align: center;
+    /* margin-top: 2rem; */
+    padding-top: 2rem;
+}
+
+.name label {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.name input {
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    width: 80%;
+}
+
+.email label {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.email input {
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    width: 80%;
+}
+
+.password label {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.password input {
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    width: 80%;
+}
+
+.submit {
+    height: 2rem;
+    width: 7rem;
+    margin-left: 5.5rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    background-color: #4E71FF;
+    color: white;
+}
+
+.submit:hover {
+    text-decoration: underline blue 0.2rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 1rem;
+    display: grid;
+}
+
+.set {
+    height: 2rem;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #4E6688;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    #main {
+        width: 90%;
+        height: auto;
+    }
+
+    .submit,
+    .set {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .name input,
+    .email input,
+    .password input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .name label,
+    .email label,
+    .password label {
+        margin-left: 0;
+    }
+}
+@media (max-width: 768px) {
+    #main {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+    }
+}
