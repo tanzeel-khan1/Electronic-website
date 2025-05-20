@@ -6,9 +6,15 @@
 // import Nabar from "./zaid/Nabar";
 // import Navbar2 from "./zaid/Navbar2";
 // import Fan from "./zaid/Fan";
+// import Navbar from "./components/Navbar"
+// import Second from "./components/Second"
+// import Third from "./components/Third"
+// import Fourth from "./components/Fouth/"
+// import Five from "./components/Five"
+
+
 
 // import { Nav } from "react-bootstrap";
-// import Next from "./Login/Next";
 import Nxt from "./Login/Nxt";
 // import ImgSec from "./samsung/ImgSec";
 // import Nav from "./samsung/Nav";
@@ -44,8 +50,11 @@ function App() {
       {/* <Nav/> */}
       {/* <ImgSec/> */}
       {/* <Third/> */}
-     {/* <Sign/> */}
-    {/* <Next/> */}
+     {/* <Navbar/> */}
+     {/* <Second/> */}
+     {/* <Third/> */}
+     {/* <Fourth/> */}
+     {/* <Five/> */}
     <Nxt/> 
 
     </div>

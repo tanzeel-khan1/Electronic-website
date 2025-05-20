@@ -17,6 +17,7 @@ const handleSubmit = (e) => {
     let users = getUsers();
 
     if (isLogin) {
+        
         const foundUser = users.find(
             (user) => user.email === email && user.password === password
         );
@@ -26,12 +27,14 @@ const handleSubmit = (e) => {
             setEmail("");
             setPassword("");
         } else {
-            alert("Invalid credentials");
+            alert("Sahi nhi hai");
         }
     } else {
         const emailExists = users.some((user) => user.email === email);
+
+
         if (emailExists) {
-            alert("Email already exists!");
+            alert("Pehly se hai");
         } else {
             const newUser = { name, email, password };
             const updatedUsers = [...users, newUser];

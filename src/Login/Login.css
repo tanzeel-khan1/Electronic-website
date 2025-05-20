@@ -25,6 +25,13 @@
     /* margin-top: 2rem; */
     padding-top: 2rem;
 }
+#main h3{
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
 
 .name label {
     font-size: 1.2rem;
@@ -92,7 +99,8 @@
 }
 
 .submit:hover {
-    text-decoration: underline blue 0.2rem;
+    color: black;
+    background-color: white;
 }
 
 p {
@@ -112,6 +120,10 @@ p {
     cursor: pointer;
     background-color: #4E6688;
     color: white;
+}
+.set:hover {
+    color: black;
+    background-color: white;
 }
 
 @media (max-width: 480px) {
