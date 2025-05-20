@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Step1{
+    height: 4rem;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    position: fixed;
+}
+ .lo h1{
+    font-size: 2rem;
+    padding-top: 0.2rem;
+    padding-left: 3rem;
+    color: #000000;
+    font-weight: lighter;
+
+}
+a{
+    text-decoration: none;
+}
+ span{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: blue;
+}
+.Step1 ul {
+  display:flex ;
+  margin-left: 10rem;
+  margin-top: 1.7rem;
+  gap: 2rem;
+}
+.Step1 li :hover{
+    color: blue;
+}
+.Step1 li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.Step1 .pop-up{
+    height: 2rem;
+    width: 20%;
+    background-color: #789DBC;
+    color: white;
+     margin-left: 5rem;
+  margin-top: 1.3rem;
+  border-radius: 10px;
+  padding-top: 0.4rem;
+  padding-left: 1rem;
+  cursor: grab;
+}
+.inp{
+    height: 2rem;
+    width: 20%;
+    background-color: #5B99C2;
+    display: flex;
+    border-radius: 10px;
+      margin-top: 1.3rem;
+      margin-left: 2rem;
+}
+.inp input{
+    height: 2rem;
+    width: 85%;
+    margin-left: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.inp span{
+    font-size: 1.3em;
+    margin-left: 1rem;
+    color: white;
+    cursor: help;
+}
+
+img {
+    height: 30rem;
+    width: 100%;
+    padding-top: 1rem;
+    margin-top: 4rem; 
+}

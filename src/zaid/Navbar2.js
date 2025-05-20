@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { data } from "../zaid/Data";
 function Navbar2({ counter }) {
   const [searchTerm, setSearchTerm] = useState("");
