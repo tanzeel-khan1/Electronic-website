@@ -211,7 +211,7 @@ function Nxt() {
               {...register("password", {
                 required: "Password is required",
                 minLength: {
-                  value: 4,
+                  value: 6,
                   message: "At least 4 characters"
                 }
               })}

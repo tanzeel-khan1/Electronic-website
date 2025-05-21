@@ -3,49 +3,52 @@ import { useForm } from "react-hook-form";
 
 function Next(){
     const [isLogin, setIsLogin] = useState(true);
-    const [loggedInUser, setLoggedUser] = useState(null);
-  
-    const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors }
-    } = useForm();
+    const [loggedInUser, setLoggedInUser] = useState(null);
 
-    const getUsers = () => JSON.parse(localStorage.getItem("user")) || [];
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: {errors}
+    }  = useForm();
+
+    const getUser = () => JSON.parse(localStorage.getItem("user")) || [];
 
     const onSubmit = (data) => {
-        let users = getUsers();
+        let users = getUser();
 
-        if(isLogin) {
-            const foundUser = users.find(
-            (user) => user.email === data.email && user.password === data.password
-            );
-        if(foundUser){
-            setLoggedUser(foundUser.name);
-            alert(`wellcome ${foundUser.name}`);
-        }else{
-            alert("Not Current");
-        }
-        }else{
-            const emailExit = users.some ((user) => user.email === data.email);
-            if(emailExit){
-            const newUser = {
-                name: data.name,
-                email: data.email,
-                password: data.password
-            };
-            const updatedUser = {... users, newUser};
-            localStorage.setItem("user", JSON.stringify(updatedUser))
-             alert("Signup Successful");
-        setIsLogin(true);
-        reset();
-            }
-        }
+     if(isLogin){
+    const foundUser = users.find(
+    (user) => user.email === data.email && user.password === data.password
+    );
+    if(foundUser){
+        setLoggedInUser(foundUser.name);
+        alert(`wellcome ${foundUser.name}`);
+    }else{
+    alert("Not Current");
+    }
+     }else{
+    const emailExit = users.some((user) => user.email === data.email);
+    if(emailExit){
+        alert("Al Ready hai");
+    }else{
+    const newUser = {
+        name: data.name,
+        email: data.email,
+        password: data.password
+    }
+    const UpdatedUser = [... users, newUser];
+     localStorage.setItem("users", JSON.stringify(UpdatedUser));
+     setIsLogin(true);
+     alert("sign Succesful");
+     reset();
     }
 
+    }
+     }
+    
     return(
-           <div id="main">
+      <div id="main">
       <h2>{isLogin ? "Login" : "Signup"}</h2>
       {loggedInUser ? (
         <h3>Hello {loggedInUser}</h3>
@@ -91,10 +94,10 @@ function Next(){
               placeholder="Password"
               {...register("password", {
                 required: "Password is required",
-                minLength: {
-                  value: 4,
-                  message: "At least 4 characters"
-                }
+               pattern: {
+                value:  /^\S+@\S+\.\S+$/,
+                message: "this"
+               }
               })}
             />
             {errors.password && <p style={{ color: "red" }}>{errors.password.message}</p>}
