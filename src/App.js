@@ -12,11 +12,11 @@
 // import Fourth from "./components/Fouth/"
 // import Five from "./components/Five"
 
-// import Next from "./Login/Next";
+import Next from "./Login/Next";
 
 // import Step1 from "./Apni/Step1";
 // import { Nav } from "react-bootstrap";
-import Nxt from "./Login/Nxt";
+// import Nxt from "./Login/Nxt";
 // import ImgSec from "./samsung/ImgSec";
 // import Nav from "./samsung/Nav";
 // import Third from "./samsung/Third";
@@ -57,8 +57,8 @@ function App() {
      {/* <Third/> */}
      {/* <Fourth/> */}
      {/* <Five/> */}
-    <Nxt/> 
-    {/* <Next/> */}
+    {/* <Nxt/>  */}
+    <Next/>
    {/* <Step1/> */}
 
     </div>

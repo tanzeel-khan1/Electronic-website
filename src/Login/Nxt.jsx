@@ -177,7 +177,10 @@ function Nxt() {
                 type="text"
                 placeholder="Name"
                 {...register("name", {
-                  required: !isLogin && "Name is required"
+                  maxLength: 3, 
+                  required: !isLogin && "Name is required",
+                  message: "3length"
+                  
                 })}
               />
               {errors.name && <p style={{ color: "red" }}>{errors.name.message}</p>}
