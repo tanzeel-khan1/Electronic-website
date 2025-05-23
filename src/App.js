@@ -60,7 +60,6 @@ function App() {
     {/* <Nxt/>  */}
     <Next/>
    {/* <Step1/> */}
-
     </div>
   );
 }
