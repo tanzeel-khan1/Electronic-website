@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignupForm from "./section/SignupForm";
 import OtpVerifyForm from "./section/OtpVerifyForm";
 
-// 🆕 Optional Home Component
 const Home = () => (
   <div className="p-4">
+    
     <h2 className="text-2xl font-bold mb-4">Welcome</h2>
     <p>Please <a href="/signup" className="text-blue-600 underline">Signup</a> to continue.</p>
   </div>

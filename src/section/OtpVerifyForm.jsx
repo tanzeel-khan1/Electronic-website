@@ -9,17 +9,23 @@ function OtpVerifyForm() {
 
   const handleVerify = async () => {
     const userId = localStorage.getItem("signup_userId");
+
+
     if (!userId) return setMessage("User ID not found.");
+
 
     try {
       const res = await axios.post("http://localhost:7000/api/auth/verify-otp", {
         userId,
+
         otp,
+
       });
       setMessage(res.data.message);
+      
       localStorage.removeItem("signup_userId");
       setTimeout(() => {
-        navigate("/login"); // or home page
+        navigate("/login");
       }, 2000);
     } catch (err) {
       setMessage(err?.response?.data?.message || "OTP verification failed");
