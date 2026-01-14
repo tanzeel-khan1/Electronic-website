@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Service from "./pages/Service";
 
-
 function App() {
   return (
     <Router>
