@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Footer from "../pages/Footer";
 const Home = () => {
-  // Variants for animations
   const containerVariants = {
     hidden: {},
     visible: {
@@ -34,7 +33,6 @@ const Home = () => {
   return (
    <>
     <section className="relative bg-white text-gray-900">
-      {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=1470&q=80"
