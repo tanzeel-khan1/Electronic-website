@@ -14,12 +14,10 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-4 md:px-8">
-        {/* Logo */}
         <NavLink to="/" className="text-blue-800 font-bold text-lg md:text-xl">
           ShopEase
         </NavLink>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 font-medium">
           {navItems.map((item) => (
             <li key={item.path}>

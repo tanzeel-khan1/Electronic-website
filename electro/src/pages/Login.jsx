@@ -33,7 +33,6 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <ToastContainer position="top-right" />
 
-      {/* Glass Card */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -48,7 +47,6 @@ const Login = () => {
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
           
-          {/* Email */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -66,7 +64,6 @@ const Login = () => {
             />
           </motion.div>
 
-          {/* Password */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -83,7 +80,6 @@ const Login = () => {
               focus:outline-none focus:ring-2 focus:ring-black/20"
             />
 
-            {/* Eye Icon */}
             <span
               onClick={() => setShowPassword(!showPassword)}
               className="absolute top-3 right-3 cursor-pointer text-gray-500"
@@ -92,7 +88,6 @@ const Login = () => {
             </span>
           </motion.div>
 
-          {/* Button */}
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
@@ -105,7 +100,6 @@ const Login = () => {
           </motion.button>
         </form>
 
-        {/* Signup Link */}
         <p className="text-sm text-center text-gray-600 mt-6">
           Don’t have an account?{" "}
           <Link to="/signup" className="text-black font-semibold cursor-pointer hover:underline">
