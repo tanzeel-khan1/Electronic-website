@@ -12,6 +12,7 @@ const Home = () => {
     },
   };
 
+  
   const textVariant = {
     hidden: { opacity: 0, y: 50 },
     visible: {
