@@ -46,7 +46,6 @@ const Profile = () => {
         className="w-full max-w-3xl rounded-2xl 
         bg-white/70 backdrop-blur-lg border border-gray-200 shadow-xl overflow-hidden"
       >
-        {/* Header */}
         <div className="bg-black text-white p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
           <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white text-black flex items-center justify-center text-2xl sm:text-3xl font-bold">
             {user.name.charAt(0).toUpperCase()}
@@ -97,7 +96,6 @@ const Profile = () => {
           </div>
         </div>
 
-        {/* Footer */}
         <div className="p-4 sm:p-6 border-t border-gray-200 flex justify-center sm:justify-end">
           <button
             onClick={handleLogout}

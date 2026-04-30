@@ -54,7 +54,6 @@ const Service = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.15, duration: 0.5 }}
               >
-                {/* Gradient Circle Icon */}
                 <div
                   className={`w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br ${service.color} text-white mb-4 shadow-lg`}
                 >
@@ -71,7 +70,6 @@ const Service = () => {
                   {service.desc}
                 </p>
 
-                {/* Hover Overlay for Premium Effect */}
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-50 to-transparent opacity-0 hover:opacity-20 transition-all rounded-2xl pointer-events-none"></div>
               </motion.div>
             );
